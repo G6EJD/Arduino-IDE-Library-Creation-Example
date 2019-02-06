@@ -1,9 +1,9 @@
 #include "LED_Controls.h"
 
-LED_Controls::LED_Controls(int pin,  int dalay){
+LED_Controls::LED_Controls(int pin,  int led_delay){
   pinMode(pin, OUTPUT);
   _pin   = pin;
-  _delay = delay;
+  _delay = led_delay;
 }
 
 void LED_Controls::ON(){
